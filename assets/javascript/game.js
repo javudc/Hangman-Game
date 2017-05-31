@@ -73,7 +73,7 @@ var hangman = {
         if (!this.checkInputAlreadyTried()) { // if letter is not tried
             this.disableLetterBtn();
             this.pushToTriedValues(); // array for tried values
-            //this.printUserTriedInputs(); // prit user input
+            
 
             if (!this.checkWordContainsUserInput()) { // if user entered letter is not in the word
                 this.printLivesLeft();
@@ -102,7 +102,7 @@ var hangman = {
         return this.computerWord.length;
     },
 
-    // create string with all dashes to print on initial load
+    // create string with all dashes to print on initial load 
     createInitialWordToPrint: function() {
         var word = "";
         for (var i = 0; i < this.computerWordLength; i++) {
@@ -112,7 +112,7 @@ var hangman = {
         return word;
     },
 
-    // check to see if user already tried the input
+    // check to see if user already tried the input in the game.
     checkInputAlreadyTried: function() {
         if (this.userInputs.length !== 0) {
             var result = this.userInputs.indexOf(this.userInput) < 0 ? false : true;
