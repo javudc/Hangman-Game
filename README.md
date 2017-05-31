@@ -1,2 +1,1 @@
-# Hangman-Game
-The game os guessing the correct letters
+# Hangman Game using Javascript, HTML 5 and Bootstap CSS.
